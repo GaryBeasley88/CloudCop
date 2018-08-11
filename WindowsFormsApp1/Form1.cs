@@ -16,5 +16,25 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void navPages_StateChanged(object sender, DevExpress.XtraBars.Navigation.StateChangedEventArgs e)
+        {
+ 
+        }
+
+        private void navpages2_StateChanged(object sender, DevExpress.XtraBars.Navigation.StateChangedEventArgs e)
+        {
+            switch (e.State)
+            {
+                case DevExpress.XtraBars.Navigation.NavigationPaneState.Collapsed:
+                    this.navPages.Width = this.Width - 48;
+                    break;
+                case DevExpress.XtraBars.Navigation.NavigationPaneState.Regular:
+                    this.navPages.Width = this.Width - this.navpages2.Width;
+                    break;
+
+            }
+
+        }
     }
 }
