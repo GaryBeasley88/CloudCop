@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1EC59DD8-3155-4E66-BC55-740218E0906A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>CloudCop</RootNamespace>
+    <AssemblyName>CloudCop</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,8 @@
     <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraMap.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -60,6 +62,72 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\ActivityLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ActivityLog.Designer.cs">
+      <DependentUpon>ActivityLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AgencyMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AgencyMap.Designer.cs">
+      <DependentUpon>AgencyMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CalendarEvents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CalendarEvents.Designer.cs">
+      <DependentUpon>CalendarEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChatMessages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChatMessages.Designer.cs">
+      <DependentUpon>ChatMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Options.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatrolView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatrolView.Designer.cs">
+      <DependentUpon>PatrolView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RMSDataView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RMSDataView.Designer.cs">
+      <DependentUpon>RMSDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UniversalSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UniversalSearch.Designer.cs">
+      <DependentUpon>UniversalSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\USearch_Case.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\USearch_Case.Designer.cs">
+      <DependentUpon>USearch_Case.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RMSSearch_Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RMSSearch_Date.Designer.cs">
+      <DependentUpon>RMSSearch_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,12 +136,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserLogin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserLogin.Designer.cs">
-      <DependentUpon>UserLogin.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Controls\ActivityLog.resx">
+      <DependentUpon>ActivityLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AgencyMap.resx">
+      <DependentUpon>AgencyMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CalendarEvents.resx">
+      <DependentUpon>CalendarEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ChatMessages.resx">
+      <DependentUpon>ChatMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatrolView.resx">
+      <DependentUpon>PatrolView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RMSDataView.resx">
+      <DependentUpon>RMSDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UniversalSearch.resx">
+      <DependentUpon>UniversalSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\USearch_Case.resx">
+      <DependentUpon>USearch_Case.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RMSSearch_Date.resx">
+      <DependentUpon>RMSSearch_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,9 +183,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserLogin.resx">
-      <DependentUpon>UserLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

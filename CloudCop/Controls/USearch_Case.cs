@@ -9,13 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace WindowsFormsApp1
+namespace CloudCop.Controls
 {
-    public partial class UserLogin : DevExpress.XtraEditors.XtraUserControl
+    public partial class USearch_Case : DevExpress.XtraEditors.XtraUserControl
     {
-        public UserLogin()
+        public USearch_Case()
         {
             InitializeComponent();
+        }
+
+        private void USearch_Case_Load(object sender, EventArgs e)
+        {
+            this.textEdit1.Focus();
         }
     }
 }

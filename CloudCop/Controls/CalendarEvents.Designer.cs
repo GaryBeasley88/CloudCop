@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿namespace CloudCop.Controls
 {
-    partial class UserLogin
+    partial class CalendarEvents
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // UserLogin
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(128, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Calendar Events";
+            // 
+            // CalendarEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UserLogin";
-            this.Size = new System.Drawing.Size(719, 581);
+            this.Controls.Add(this.label1);
+            this.LookAndFeel.SkinName = "DevExpress Dark Style";
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.Name = "CalendarEvents";
+            this.Size = new System.Drawing.Size(763, 611);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
