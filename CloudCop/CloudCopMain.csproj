@@ -110,12 +110,6 @@
     <Compile Include="Controls\UniversalSearch.Designer.cs">
       <DependentUpon>UniversalSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\USearch_Case.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\USearch_Case.Designer.cs">
-      <DependentUpon>USearch_Case.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\RMSSearch_Date.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,9 +153,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UniversalSearch.resx">
       <DependentUpon>UniversalSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\USearch_Case.resx">
-      <DependentUpon>USearch_Case.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\RMSSearch_Date.resx">
       <DependentUpon>RMSSearch_Date.cs</DependentUpon>

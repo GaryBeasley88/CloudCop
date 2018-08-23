@@ -137,7 +137,7 @@
             this.navigationPage7.Caption = "Patrol View";
             this.navigationPage7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage7.ImageOptions.Image")));
             this.navigationPage7.Name = "navigationPage7";
-            this.navigationPage7.Size = new System.Drawing.Size(182, 551);
+            this.navigationPage7.Size = new System.Drawing.Size(272, 551);
             this.navigationPage7.ToolTip = "Patrol View";
             // 
             // navigationPage6
@@ -173,10 +173,12 @@
             // 
             // navigationPage8
             // 
+            this.navigationPage8.Appearance.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.navigationPage8.Appearance.Options.UseBackColor = true;
             this.navigationPage8.Caption = "Search";
             this.navigationPage8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage8.ImageOptions.Image")));
             this.navigationPage8.Name = "navigationPage8";
-            this.navigationPage8.Size = new System.Drawing.Size(182, 551);
+            this.navigationPage8.Size = new System.Drawing.Size(272, 551);
             this.navigationPage8.ToolTip = "Search Options";
             // 
             // Form1
